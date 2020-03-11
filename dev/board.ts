@@ -55,4 +55,9 @@ class Board {
     public static samePosition(a:[number, number], b:[number, number]): boolean {
         return (a[0] == b[0]) && (a[1] == b[1]);
     }
+
+    // check difference between positions 
+    public static differencePosition(a:[number, number], b:[number, number]): [number, number] {
+        return [ b[0] - a[0], b[1] - a[1]]
+    }
 }
